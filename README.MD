@@ -1,8 +1,8 @@
 <h1 align="center"><img src="https://pbs.twimg.com/profile_images/472092114583433216/2czfO0xa_400x400.png" ><br>Ampache </h1>
 
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:
 
 
 
@@ -217,21 +217,44 @@ Langkah-langkah membuat **Ampache** masuk kedalam mode *maintenance*
 
 
 
-# Otomatisasi
-[`^ kembali ke atas ^`](#)
-
-
-
-
-
-
 # Cara Pemakaian
 [`^ kembali ke atas ^`](#)
-
-
+1. Sebelum menggunakan Ampache, pertama lakukanlah Login pada halaman awal dengan menggunakan akun yang sudah tersedia:
+![11](https://i.pinimg.com/originals/93/59/f9/9359f99e0d8b61054df058761485aa02.png)
+Hubungi Admin jika anda belum terdaftar dan ingin mendaftar ke ampache.
+2. Pada halaman awal kita akan ditampilkan menu pilihan seperti gambar di bawah ini.
+![
+](https://i.pinimg.com/originals/fc/08/2a/fc082a402802d88a6d21e8042a36f937.png)
+3. Pada deretan tombol menu, di bawah menu Music terdapat pemilihan kategori file musik berdasarkan artist, genre, album, year dan lainnya. Sebagai contoh, klik pilihan *Song titles*. ![
+](https://i.pinimg.com/originals/19/ea/41/19ea41cc40843fb14a0e2a7bf0de5ff9.png)
+Akan ditampilkan lagu yang telah terdapat di dalam katalog di yang berada di server. Untuk memutar lagu hanya perlu klik tombol play yang terdapat di sebelah kiri dari judul lagu setelah kita *hover* mouse kita ke lagu tersebut.
+4. Untuk Video dan Juga Stream Radio, bisa dilakukan dengan klik pada pilihan yang tersedia, namun layanan radio harus didaftarkan terlebih dahulu oleh admin atau pihak  berwenang yang lain.
+5. Jika anda adalah seorang administrator (atau pihak lain yang diberikan akses untuk menambah katalog), anda dapat menambah katalog yang berisi direktori dimana anda menyimpan lagu di server anda pada  tab admin, lalu dibawah menu katalog, add a catalog seperti pada gambar di bawah ini.![enter image description here](https://i.pinimg.com/originals/fa/f2/08/faf208f2f8548e209bb18736977c0a58.png)
+Masukan nama katalog, jenis katalog apakah local atau remote, setelah anda memilih, misalkan local akan tampil form untuk mengisi *path* dari tempat anda menyimpan lagu atau file lainnya di dalam server anda.
+![enter image description here](https://i.pinimg.com/originals/7e/7a/c6/7e7ac6d4a6547e83df57fc58dcb87afa.png)
+Jika telah selesai memasukkan direktori di path, klik **Add catalog** untuk menyelesaikan proses penambahan katalog.
+6. Lagu atau file media yang anda simpan kemudian akan di scan oleh **Ampache** lalu akan tampil ke dalam daftar musik atau media yang ada di ampache. Kemudian file tersebut langsung dapat diputar oleh user lain.
 
 # Pembahasan
 [`^ kembali ke atas ^`](#)
+**Ampache** dalam kemampuan untuk mengakses seluruh perpustakaan musik dari jarak jauh dan digunakan menggunakan PHP,HTML5 dan MySQL.  <br>
+Kelebihan: <br/>
+- Terhubung ke layanan seperti ChatLyrics dan LyricsWiki untuk mendapatkan lirik lagu.
+- Mendukung untuk dimainkan secara lokal untuk VLC dan Kodi
+- Multidevice di satu akun, dapat digunakan di banyak device berbeda dengan akun yang sama secara bersamaan.
+-
+
+Kekurangan: <br>
+- Interfacenya tidak memanjakan user
+- Tidak memiliki pemutaran cepat
+- Tidak ada fitur bookmark yang memungkinkan Anda melanjutkan dari tempat Anda tinggalkan.
+
+
+Jika dibandingkan dengan streaming server lainnya seperti subsonic, streaming server ini mempunyai kelebihan dan kelemahan
+- **Subsonic** diharuskan membayar untuk menghapus iklan dari salah satu aplikasi sedangkan **ampache** tidak perlu
+- **Ampache** mengatur stasiun radio internet dengan aplikasi yang tersedia
+- **Ampache** mendukung streaming video sedangkan **subsonic** tidak mendukung
+- Tidak terlalu terkenal dibandingkan dengan **JOOX** atau **Spotify**, karena instalasi dan penggunaannya yang tidak lebih praktis dibandingkan dengan kedua aplikasi tersebut.
 
 
 # Referensi
@@ -240,6 +263,5 @@ Langkah-langkah membuat **Ampache** masuk kedalam mode *maintenance*
 1. [Github Official Installation Guide](https://github.com/ampache/ampache/wiki/Installation) - Ampache
 2. [How to Log Into a VPS with PuTTY on Windows](https://www.digitalocean.com/community/tutorials/how-to-log-into-a-vps-with-putty-windows-users) - DigitalOcean
 3. [Change The Maximum File Upload Size on PHP](https://stackoverflow.com/questions/2184513/change-the-maximum-upload-file-size) - Stack Overflow
-4. [Empty](https://google.com) - PrestaShop
 5. [Ampache Maintenance Mode](https://github.com/ampache/ampache/wiki/Upgrade) - GitHub
 6. [Apache Set AllowOverride](https://stackoverflow.com/questions/18740419/how-to-set-allowoverride-all) - Stack Overflow
